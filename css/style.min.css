@@ -929,6 +929,9 @@ button.btn-socials {
   right: 85px;
   bottom: 10px;
 }
+.intro__row.mobile {
+  display: none;
+}
 .intro__info {
   position: relative;
   z-index: 2;
@@ -2261,6 +2264,33 @@ body {
     width: 30%;
     height: auto;
   }
+  .intro {
+    margin-bottom: -180px;
+  }
+  .intro__row.pc {
+    display: none;
+  }
+  .intro__row.mobile {
+    display: block;
+  }
+  .intro__img {
+    position: relative;
+    top: -220px;
+    left: -20px;
+  }
+  .intro__img picture img {
+    left: 0px;
+    object-fit: fill;
+    width: calc(100% + 40px);
+  }
+  .intro__img .intro__circle {
+    right: -10px;
+    bottom: -10px;
+  }
+  .intro__advantages {
+    position: relative;
+    top: -180px;
+  }
   .form-callback__row {
     flex-direction: column;
   }
@@ -2504,19 +2534,14 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .intro__img {
-    top: 10%;
+    top: -180px;
   }
-  .intro__row.row-first .intro, .intro__row.row-second .intro {
-    overflow: visible;
+  .intro__img .intro__circle {
+    right: -20px;
   }
-  .intro__row.row-first .intro__img > picture > img, .intro__row.row-second .intro__img > picture > img {
-    object-fit: cover;
-  }
-  .intro__row.row-first .intro__circle, .intro__row.row-second .intro__circle {
-    width: 40%;
-    height: auto;
-    right: 0px;
-    bottom: 30px;
+  .intro__advantages {
+    position: relative;
+    top: -140px;
   }
   .form-decision .policy + img {
     width: 100%;
@@ -2534,29 +2559,18 @@ body {
   }
 }
 @media only screen and (max-width: 576px) {
-  .intro__info {
-    aspect-ratio: 1/1.58;
+  .intro {
+    margin-bottom: -100px;
   }
-  .intro__circle {
-    right: -2%;
-    bottom: 0px;
+  .intro__img {
+    top: -140px;
   }
-  .intro__row.row-first, .intro__row.row-second {
-    overflow: visible;
+  .intro__img .intro__circle {
+    bottom: -5px;
   }
-  .intro__row.row-first .intro__img > picture > img, .intro__row.row-second .intro__img > picture > img {
-    height: 80%;
-    top: 14%;
-    width: 100%;
-    left: 20px;
-  }
-  .intro__row.row-first .intro__advantages, .intro__row.row-second .intro__advantages {
-    padding-top: 80%;
-    max-width: 100%;
-    padding-left: 0px;
-  }
-  .intro__row.row-second .intro__advantages {
-    padding-top: 60%;
+  .intro__advantages {
+    position: relative;
+    top: -100px;
   }
   .form-callback__arrow {
     margin-left: 0px;
@@ -2613,6 +2627,20 @@ body {
   }
 }
 @media only screen and (max-width: 450px) {
+  .intro {
+    margin-bottom: -100px;
+  }
+  .intro__img {
+    top: -110px;
+  }
+  .intro__img .intro__circle {
+    right: -22.5px;
+    bottom: -5px;
+  }
+  .intro__advantages {
+    position: relative;
+    top: -70px;
+  }
   .footer__info {
     align-items: flex-start;
   }
@@ -2628,36 +2656,6 @@ body {
   .btn {
     font-size: 10px;
   }
-  .intro__img {
-    position: absolute;
-    top: 90px;
-  }
-  .intro__info {
-    aspect-ratio: 1/1.8;
-  }
-  .intro__row.row-first .intro__circle, .intro__row.row-second .intro__circle {
-    bottom: 40px;
-    right: -10px;
-  }
-  .intro__row.row-first .intro__img {
-    top: 0%;
-    left: 0%;
-  }
-  .intro__row.row-first .intro__img > picture > img {
-    left: 0px;
-    height: 80%;
-  }
-  .intro__row.row-first .intro__circle {
-    bottom: 7%;
-    right: 2%;
-  }
-  .intro__row.row-first .intro__advantages {
-    padding-right: 0px;
-    margin-top: 0%;
-  }
-  .intro__row.row-first .intro__advantage {
-    flex-direction: row;
-  }
 }
 @media only screen and (max-width: 430px) {
   .contacts__top {
@@ -2665,51 +2663,18 @@ body {
   }
 }
 @media only screen and (max-width: 390px) {
-  .intro__row.row-second .intro__img {
-    left: -20px;
-    height: 50%;
-    top: 10%;
+  .intro {
+    margin-bottom: -100px;
   }
-  .intro__row.row-second .intro__circle {
-    width: 35%;
-    bottom: 20px;
-    right: 5px;
+  .intro__img {
+    top: -100px;
   }
-  .intro__row.row-second .intro__advantages {
-    padding-top: 0px;
-  }
-  .intro__row.row-first .intro__img {
-    left: -20px;
-    height: 50%;
-    top: 10%;
-    width: calc(100% + 40px);
-  }
-  .intro__row.row-first .intro__img > picture > img {
-    left: 0px;
-    height: 100%;
-  }
-  .intro__row.row-first .intro__circle {
-    width: 35%;
-    bottom: -40px;
-    right: 25px;
-  }
-  .intro__row.row-first .intro__advantages {
-    margin-top: 10%;
-  }
-  .intro__info {
-    aspect-ratio: auto;
+  .intro__img .intro__circle {
+    right: -22.5px;
+    bottom: -5px;
   }
   .intro__advantages {
-    margin-top: 80%;
-  }
-  .intro__circle {
-    bottom: -70px;
-  }
-  .intro__img > picture > img {
-    width: 113%;
-    object-fit: cover;
-    left: -22px;
-    top: 60px;
-    border-radius: 0px;
+    position: relative;
+    top: -70px;
   }
 }
