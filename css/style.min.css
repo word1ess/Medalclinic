@@ -2213,15 +2213,15 @@ body {
     right: 1%;
     bottom: 5px;
   }
+  .intro__row h2 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #51c9a3;
+  }
   .intro__info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  .intro__info h2 {
-    font-size: 16px;
-    margin-bottom: 16px;
-    color: #51c9a3;
   }
   .intro__img {
     position: relative;
